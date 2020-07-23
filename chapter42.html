@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Chapter 42
+    </title>
+<style>
+.queso2 img{
+    margin-left: 6%;
+    margin-top: 4%;
+    text-align: center;
+    width: 230px !important;
+    border: 2px solid blue;
+}
+
+table tr{
+    text-align: center;
+    
+}
+
+table tr td{
+    text-align: center;
+    padding: 10px 15px;
+}
+</style>
+</head>
+<body>
+<!-- Qno-01-->
+<!-- <a href="#" onclick="getAlert()">Click On Link</a> -->
+
+
+
+
+
+<!-- Qno-02 -->
+<div class="queso2" style="margin-left: 2%;">
+    <img src="images/download (1).jpg" onclick="ImagesAlert()"  height="250" width="200"alt="src" >
+    <img src="images/download (2).jpg" onclick="ImagesAlert()" height="250" width="200"alt="src" >
+    <img src="images/images.jpg" onclick="ImagesAlert()" height="250" width="200"alt="src" >
+    <img src="images/back01.jpg" onclick="ImagesAlert()" height="250" width="200"alt="src" >
+</div>
+
+
+
+
+<!-- Qno-03-->
+
+<table  width="50%" align="center">
+    <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th> Deleted</th>
+    </tr>
+
+    <tr id="row01">
+        <td>01</td>
+        <td>Faraz </td>
+        <td> 09 </td>
+        <td> <button onclick="deleredRow()"> Deleted</button> </td>  
+    </tr> 
+
+    <tr id="row02"> 
+        <td>02</td>
+        <td>sheraz </td>
+        <td>  11 </td>
+        <td> <button onclick="getElementById('row02').remove()">Deleted </button></td>   
+    </tr> 
+
+
+    <tr id="row03">
+        <td>03</td>
+        <td> Saif </td>
+        <td> 07 </td>
+        <td> <button onclick="getElementById('row03').remove()"> Deleted</button> </td>  
+    </tr> 
+
+    <tr id="row04"> 
+        <td>04</td>
+        <td> Faiz </td>
+        <td>  13 </td>
+        <td> <button onclick="getElementById('row04').remove()">Deleted </button></td>   
+    </tr> 
+
+
+
+    <tr id="row05">
+        <td>05</td>
+        <td> Abdullah </td>
+        <td> 04 </td>
+        <td> <button onclick="getElementById('row05').remove()"> Deleted</button> </td>  
+    </tr> 
+
+    <tr id="row06"> 
+        <td>06</td>
+        <td> Faiz </td>
+        <td>  13 </td>
+        <td> <button onclick="getElementById('row06').remove()">Deleted </button></td>   
+    </tr>
+    
+
+
+    <tr id="row07"> 
+        <td>07</td>
+        <td> Farooq </td>
+        <td>  7 </td>
+        <td> <button onclick="getElementById('row07').remove()">Deleted </button></td>   
+    </tr> 
+
+
+
+    <tr id="row08">
+        <td>08</td>
+        <td> Subhan </td>
+        <td> 12 </td>
+        <td> <button onclick="getElementById('row08').remove()"> Deleted</button> </td>  
+    </tr> 
+
+    <tr id="row09"> 
+        <td>09</td>
+        <td> Huzaifa </td>
+        <td>  13 </td>
+        <td> <button onclick="getElementById('row09').remove()">Deleted </button></td>   
+    </tr>
+    
+
+    <tr id="row10"> 
+        <td>10</td>
+        <td> Shahzaib </td>
+        <td>  13 </td>
+        <td> <button onclick="getElementById('row10').remove()">Deleted </button></td>   
+    </tr> 
+
+
+</table>
+
+
+
+
+
+
+
+
+
+<!-- Qno-04 -->
+
+
+
+<!-- <div class="queso2" style="margin-left: 2%;">
+  
+    <img src="images/shoes1.jpg" id="img01"   onmouseover="changeImage()" onmouseout="firstImages()"  height="250" width="200" alt="" >
+    
+</div> -->
+
+
+<!-- Qno-05 -->
+<!--  
+<div style=" color: black; align-items: center; margin-top: 10%;" align="center" >
+
+
+
+    <button onclick="Increase()" style="background-color: brown; padding: 10px 30px ;">
+            Increase
+    </button>
+
+    <button onclick="Decrease()"  style="background-color: brown; padding: 10px 30px ;">
+        Decrease
+    </button>
+
+
+    <h1 id="Increase01">
+        0
+    </h1>
+    
+ 
+    
+</div> -->
+
+    <script>
+
+
+
+            //Qno-01))
+
+
+            // function getAlert(){
+            //     alert("Hello Saylani!!")
+            // }
+
+
+
+
+
+
+
+
+            //Qno-02
+
+
+            function ImagesAlert(){
+
+                alert("Thanks For Purshasing a Shoes Form Sites!!!")
+            }
+
+
+
+
+
+
+           //Qno-03))
+
+                function deleredRow(){
+                    document.getElementById("row01").remove();
+                }
+
+
+
+           //Qno-04))
+
+        //    function changeImage(){
+
+        //        document.getElementById("img01").src = "images/shoes3.jpg";
+        //    }
+
+        //    function firstImages(){
+
+        //     document.getElementById("img01").src = "images/shoes1.jpg";
+        //     }
+
+
+
+        //Qno-05))
+
+            // count = 0;
+
+            // function Increase(){
+                
+            //     count++;
+            //     var increase = document.getElementById("Increase01");
+            //     increase.innerHTML = count;
+            // }
+
+
+            // function Decrease(){
+                
+            //     count--;
+            //     var increase = document.getElementById("Increase01");
+            //     increase.innerHTML = count;
+            // }
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chapter 52</title>
+</head>
+
+<style>
+
+
+.div {
+    padding: 10px;
+}
+
+.div>img {
+    width: 22%;
+    height: 300px;
+}
+
+
+
+.Edit {
+    background: #0062cc;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 40%;
+}
+
+.Edit:hover {
+    background: #cc0e009f;
+    color: #fff;
+    border: none;
+}
+
+</style>
+<body>
+    
+    <div id="img">
+
+    </div>
+
+    <h1 class="text-center mt-2">Q1: Model</h1>
+
+
+    <div style="text-align: center;" class="div">
+        <img onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" id="im1" src="" alt="">
+        <img onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" id="im2" src="" alt="">
+        <img onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" id="im3" src="" alt="">
+        <img onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" id="im4" src="" alt="">
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <img width="460px" height="300px" src="" alt="" id="modalImage">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn btn-block" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h1 class="text-center mt-2">Q2: Paragraph</h1>
+    <div class="center" style="text-align: center;">
+        <p id="par">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum nesciunt, magnam nisi molestias doloribus neque, rem numquam natus, necessitatibus temporibus minima mollitia perferendis quibusdam! Reprehenderit voluptates consectetur exercitationem
+            accusamus officia?</p>
+
+        <button class="btn btn-danger" onclick="zoomIn()">  <i class="fa fa-plus" id="sign"></i></button>
+        <button class="btn btn-danger" onclick="zoomOut()"><i class="fa fa-minus" id="sign"></i></button>
+    </div>
+
+
+
+
+    <script>
+        
+var images = ["images/back01.jpg", "images/back01.jpg", "images/back01.jpg", "images/back01.jpg"]
+var img1 = document.getElementById("im1")
+var img2 = document.getElementById("im2")
+var img3 = document.getElementById("im3")
+var img4 = document.getElementById("im4")
+for (var i = 0; i < images.length; i++) {
+    im1.src = images[0]
+    im2.src = images[1]
+    im3.src = images[2]
+    im4.src = images[3]
+}
+
+function showImage(e) {
+    console.log(e.src)
+    var img = document.getElementById("modalImage")
+    img.src = e.src
+}
+
+
+// TASK 2 
+
+function zoomIn() {
+    var para = document.getElementById("par")
+    para.style.fontSize = +para.style.fontSize.slice(0, -2) + 10 + "px"
+
+}
+
+function zoomOut() {
+    var para = document.getElementById("par")
+
+    para.style.fontSize = +para.style.fontSize.slice(0, -2) - 10 + "px"
+}
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>

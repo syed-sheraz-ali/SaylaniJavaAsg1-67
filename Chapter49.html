@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset="utf-8">
+    <title>Untitled Document</title>
+    <!-- Bootstarps CDN -->
+    
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+      
+      <!-- Style css--> 
+      
+      <link rel="stylesheet" href="Logstyle.css" />
+      
+      
+    <!-- Google Fonts -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+    <style>
+    
+/* CSS Document */
+
+* {
+	margin : 0px;
+	padding:0px;
+	
+    font-family: 'Roboto', sans-serif;
+    }
+    
+body{
+
+	background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+	width:100%;
+	height:100vh;
+		
+}
+td{
+    color:black;
+
+
+}
+
+
+.box{
+	margin-top:1%;
+	border: gray 1px solid;
+	padding:70px 30px;	
+	-webkit-box-shadow: 17px 14px 2px -6px rgba(0,0,0,0.53);
+	-moz-box-shadow: 17px 14px 2px -6px rgba(0,0,0,0.53);
+	box-shadow: 17px 14px 2px -6px rgba(0,0,0,0.53);
+	
+	
+}
+
+.logo{
+	height: 120px ;
+	width:120px;
+	border-radius: 50%;
+	margin-left: 44%;
+	margin-bottom: 10%;
+
+}
+
+::placeholder{
+    font-weight: 100 !important;
+    font-size: 0.8rem;
+}
+
+.btn-success{
+    background-color: blue !important;
+    padding: 10px 50px;
+}
+
+.btn-success:hover{
+    background-color: rgb(137, 161, 240) !important;    
+    padding: 10px 50px;
+}
+
+.about-us{
+    margin-top: 5%;
+    color: black !important;
+
+}
+
+.contentt>p>h2>h3{
+    color: black !important;
+}
+.contentt h3{
+    margin: 40px 15xp;
+    text-align: center;
+    font-size: 2.0rem;
+    border-bottom: blue 2px solid;
+
+}
+
+.contentt{
+    border: 1px solid gray;
+    padding: 40px 40px;
+    border-radius: 5px;
+}
+
+    </style>
+    </head>
+    
+    <body>
+    
+      <h3 class="text-center">Question Number 01 </h3>
+      <div class="container register-form">
+          <div class="form">
+              <div class="note">
+                  <h3 class="text-center">Sign Up Form</h3>
+              </div>
+  
+              <div class="form-content">
+                  <div class="row">
+                      <div class="col-md-6 col-lg-6 col-xl-6 col-12">
+                          <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Your Name *" value="" id="name" />
+                          </div>
+
+  
+                          <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Email*" value="" id="email" />
+                          </div>
+                          <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Phone Number *" value="" id="PN" />
+                          </div>
+                      </div>
+
+
+
+                      <div class="col-md-6 col-lg-6 col-xl-6 col-12">
+                          <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Your Password *" value="" id="pass" />
+                          </div>
+                          <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Confirm Password *" value="" id="Cpass" />
+                          </div>
+                      </div>
+                  </div>
+                  <button type="button" class="btn btn-success" onclick="getValues()">Submit</button>
+              </div>
+          </div>
+      </div>
+  
+  
+  
+      <br>
+      <div class="container">
+          <table class="table" id="myTable">
+              <thead>
+                  <tr>
+                      <th>Name</th>
+                      <th>Email</th>
+                      <th>Phone</th>
+                      <th>Password</th>
+                      <th>Confrim Password</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td id="tdname"></td>
+                      <td id="tdemail"></td>
+                      <td id="tdPN"></td>
+                      <td id="tdpass"></td>
+                      <td id="tdCpass"></td>
+                  </tr>
+  
+  
+              </tbody>
+          </table>
+      </div>
+
+
+
+      <section class="about-us">
+          <div class="container">
+              <div class="row">
+                    <div class="col-md-12 col-lg-12 col-xl-12 contentt">
+                        <h2> About Us</h2>
+                        <h3> We are Provide Best Islamic Education!!</h3>
+                        <p>E Qur`an Academy & Online Institude!
+           We have Alhamdulillah 100% checked and experienced online Quran Male and Female Tutors in sensible charge. All courses comprises
+           Tajweed, Hifz, Recitation, Islamic petitions (Duain), Arabic Language, Tafseer. Learn Quran with Tajweed Online With our 100% 
+            confirmed guides. Classes will be hung on Skype/Zoom as per your booked time and days. Start Today and have free 3 days preliminary
+             classes with our confirmed guides. Our administrations are day in and day out for national and global understudies with sensible charge.
+              We offer 3 days Demo/Free Trial classes to all our national and global understudies and offer fast types of assistance. Classes 
+              are held 5 days per week. We offer end of the week classes too. Online Quran learning with Tajweed for children and grown-ups,
+               If Quran online educator required anyplace in the World, we are here to serve you as we are the best Quran foundation for online 
+               Quran educational cost. We are filling in as a Quran school to give Quran e learning on Skype/Zoom. All online Quran classes will
+               be hung on Skype/Zoom. On the off chance that Quran guide required anyplace in the World, we are here to serve you to give Quran e
+                   learning all day, every day quick 
+                        administrations to all our national and global students.e
+                    
+                        <p id="extand-pera"></p>
+                    
+                    
+                    </P>
+                    <a href="javascript:void(0)">
+                    <button type="button" class="btn btn-success" onclick="getReadMore()">Read More</button>
+                </a>
+
+                    </div>
+              </div>
+          </div>
+      </section>
+
+
+
+
+
+      <!-- <div class="container" style="text-align: center;">
+
+        <h3>Q2: Expand Content </h3>
+
+        <div class="card" style="width: 70rem;">
+
+            <div class="card-body">
+                <h5 class="card-title">SMIT-Saylani Mass IT Training</h5>
+                <p class="card-text">Established in May 1999 by famous spiritual and religious scholar Maulana Bashir Ahmed Farooqui,
+                     Saylani Welfare International Trust was built on the fundamentals of breaking the cycle of poverty, alleviating 
+                     the financial troubles of
+                    the poor, giving people a chance to live a dignified life and spreading happiness.
+
+                    <p id="para"></p>
+
+                </p>
+                <a href="javascript:void(0)" class="btn btn-primary" onclick="ExpandPara()">Read more</a>
+
+            </div>
+        </div>
+    </div> -->
+      
+    
+    </body>
+    
+    </html>
+    
+
+
+
+<script>
+    function getValues() {
+
+Name = document.getElementById('name').value;
+
+document.getElementById("tdname").innerHTML += Name + "<br>";
+
+Name = document.getElementById('name').value = '';
+
+
+
+Email = document.getElementById('email').value;
+document.getElementById("tdemail").innerHTML += Email + "<br>";
+
+
+Email = document.getElementById('email').value = '';
+
+
+
+
+Phone = document.getElementById('PN').value;
+document.getElementById('tdPN').innerHTML += Phone + "<br>";
+
+Phone = document.getElementById('PN').value = '';
+
+
+
+
+Password = document.getElementById('pass').value;
+document.getElementById("tdpass").innerHTML += Password + "<br>";
+Password = document.getElementById('pass').value = '';
+
+
+CPass = document.getElementById('Cpass').value;
+document.getElementById("tdCpass").innerHTML += CPass + "<br>";
+CPass = document.getElementById('Cpass').value = '';
+
+
+
+}
+
+
+
+
+function getReadMore() {
+
+
+var Para = 'Quran Academy is a spectacular platform of Online Teaching which enables new Muslims and Children are all over the world to enhance their Islamic or Qur’anic learning at their home. We welcome all female and male students who are interested in Quranic learning. Our courses includes Reading (Nazra Quran), Nurani Qaida, Memorizing Quran, Translation and Prayers Dua’s with the 6 Kalimas. You are just one click away to learn from our highly qualified and experienced or dedicated Female & Male Teachers. Our Tutors are available 24/7 to teach our beloved students. In Shaa Allah you and your kids or your whole family will start Quran Learning immediatel.'
+
+ValuePara = document.getElementById('extand-pera');
+
+ValuePara.innerHTML = Para;
+}
+
+</script>
