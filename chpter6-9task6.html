@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Chapter 6-9 Task# 6</h1>
+
+    <table>
+        
+        
+            <td><h3>Subject</h3></td>
+            <td><h3>Total Marks</h3></td>
+            <td><h3>Obtained Marks</h3></td>
+            <td><h3>Percentage</h3></td>
+        
+        <tr>
+          
+            
+            <td><script> 
+                var a = prompt("enter the subject# 1")
+                document.write( "               "  + a) 
+            </script></td>
+            <td>
+                <script>
+                    var total_marks = 100;
+                    document.write('       <t/>   ' +total_marks)
+                </script>
+            </td>
+            <td>
+                <script>
+                    e = prompt("Enter obtained marks in subject " + a)
+                    marks1 =parseInt(e)
+                    document.write("             " +e)
+                </script>
+            </td>
+            <td>
+                <script>
+                    var sub_1 = (e/total_marks)*100
+                    document.write(sub_1 + " %")
+                </script>
+            </td>
+            
+        </tr>
+        
+        <tr>
+            
+            <td><script>
+                var b = prompt("enter the subject# 2")
+                document.write("   " +b) 
+            </script></td>
+
+            <td>
+                <script>
+                    var total_marks = 100;
+                    document.write("   " +total_marks)
+                </script>
+            </td>
+            <td>
+                <script>
+                    f = prompt("Enter obtained marks in subject " + b)
+                    document.write("   " +f)
+                    marks2 =parseInt(f)
+                </script>
+            </td>
+            <td>
+                <script>
+                    var sub_2 = (f/total_marks)*100
+                    document.write(sub_2 + " %")
+                </script>
+            </td>
+        </tr>
+        <tr>
+            
+            <td><script>
+                var c = prompt("enter the subject# 3")
+                document.write("   " +c) 
+            </script></td>
+
+            <td>
+                <script>
+                   var total_marks = 100;
+                    document.write("   " +total_marks)
+                </script>
+            </td>
+            <td>
+                <script>
+                    g = prompt("Enter obtained marks in subject " + c)
+                    document.write("   " +g)
+                    marks3 =parseInt(f)
+                </script>
+            </td>
+            <td>
+                <script>
+                    var sub_3 = (g/total_marks)*100
+                    document.write(sub_3 + " %")
+                </script>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            
+            <td><script>
+                var total= 300
+                document.write("<b>"+total+"</b>")
+            </script></td>
+            <td>
+                <script>
+                    var obtained_marks = marks1+marks2+marks3;
+                    document.write("<b>"+obtained_marks+"</b>")
+                </script>
+            </td>
+            <td>
+                <script>
+                    var total_per = (obtained_marks/total)*100
+                    
+                    document.write("<b>"+ total_per+  " %</b>")
+                </script>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+
+</html>
